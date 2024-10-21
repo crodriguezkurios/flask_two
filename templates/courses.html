@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+ <ul>
+    {% for course in data.courses %}
+        <li><a href="{{ url_for('course', id=data.courses.index(course)) }}">{{ course | upper }}</a></li>
+    {% endfor %}
+ </ul>
+{% endblock %}

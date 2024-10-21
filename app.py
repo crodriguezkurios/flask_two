@@ -7,4 +7,6 @@ def hello_world(request):
     
     return 'Hello, {}!'.format(name)
 
-
+@app.route('/courses')
+def courses():
+    return 'Cursos'
